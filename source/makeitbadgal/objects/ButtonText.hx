@@ -1,3 +1,5 @@
+package makeitbadgal.objects;
+
 import flixel.util.FlxColor;
 import flixel.util.FlxSignal;
 import flixel.FlxG;
@@ -20,7 +22,7 @@ class ButtonText extends FlxText
 		super(x, y, fw, t, s ?? SCALE_MAIN);
 
 		color = FlxColor.BLACK;
-		font = 'assets/fonts/Perfect DOS VGA 437.ttf';
+		font = AssetsUtil.path('fonts/Perfect DOS VGA 437.ttf');
 
 		antialiasing = false;
 		// tempted to disable fullscreen because flixel makes the text look fucking UUUUUGLLLLLLLY

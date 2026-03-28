@@ -7,7 +7,9 @@ class InitState extends FlxState
 	{
 		super.create();
 
-		FlxG.switchState(() -> new SplashState());
+		trace('MIBAL: ${makeitbadgal.Config.MIBAL_BaseVersion}');
+		
+		FlxG.switchState(() -> new makeitbadgal.SplashState());
 	}
 
 	override public function update(elapsed:Float)

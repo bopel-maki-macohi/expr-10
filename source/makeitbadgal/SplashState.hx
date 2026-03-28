@@ -1,8 +1,10 @@
+package makeitbadgal;
+
+import makeitbadgal.objects.ButtonText;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import flixel.FlxG;
 import flixel.FlxState;
-import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 
 class SplashState extends FlxState
@@ -26,7 +28,7 @@ class SplashState extends FlxState
 
 		trace('Starting splash...');
 
-		FlxG.sound.play('assets/sounds/splash.wav');
+		FlxG.sound.play(AssetsUtil.sound('sounds/splash.wav'));
 		FlxTween.tween(companyText, {alpha: 0}, 1, {
 			startDelay: 1,
 			onComplete: function(t)
