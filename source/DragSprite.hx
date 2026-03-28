@@ -11,6 +11,9 @@ class DragSprite extends FlxSprite
 	{
 		super.update(elapsed);
 
+		if (dragging)
+			setPosition(FlxG.mouse.x + mousePositionOffsets.x, FlxG.mouse.y + mousePositionOffsets.y);
+
 		if (FlxG.mouse.overlaps(this))
 		{
 			if (FlxG.mouse.justPressed)
@@ -27,8 +30,5 @@ class DragSprite extends FlxSprite
 			if (dragging)
 				dragging = false;
 		}
-
-		if (dragging)
-			setPosition(FlxG.mouse.x + mousePositionOffsets.x, FlxG.mouse.y + mousePositionOffsets.y);
 	}
 }
