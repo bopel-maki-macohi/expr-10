@@ -1,10 +1,8 @@
-package;
-
 import flixel.util.FlxTimer;
 import flixel.FlxG;
-import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.text.FlxText;
+import flixel.tweens.FlxTween;
 
 class SplashState extends FlxState
 {
