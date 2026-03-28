@@ -21,11 +21,14 @@ class DragSprite extends FlxSprite
 
 			if (FlxG.mouse.justReleased)
 				dragging = false;
-
-			if (dragging)
-			{
-				setPosition(FlxG.mouse.x + mousePositionOffsets.x, FlxG.mouse.y + mousePositionOffsets.y);
-			}
 		}
+		else
+		{
+			if (dragging)
+				dragging = false;
+		}
+
+		if (dragging)
+			setPosition(FlxG.mouse.x + mousePositionOffsets.x, FlxG.mouse.y + mousePositionOffsets.y);
 	}
 }
