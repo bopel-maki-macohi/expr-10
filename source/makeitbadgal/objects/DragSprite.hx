@@ -1,3 +1,5 @@
+package makeitbadgal.objects;
+
 import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.math.FlxPoint;
 import flixel.FlxG;
