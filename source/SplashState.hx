@@ -1,3 +1,4 @@
+import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import flixel.FlxG;
 import flixel.FlxState;
@@ -14,9 +15,10 @@ class SplashState extends FlxState
 
         companyText = new ButtonText(FlxG.stage.application.meta.get('company'), false, ButtonText.SCALE_MAIN);
         add(companyText);
+		companyText.color = FlxColor.WHITE;
         companyText.screenCenter();
 
-		#if debug
+		#if SKIP_SPLASH
 		trace('Skipping splash...');
 		endSplash();
 		return;
